@@ -68,10 +68,9 @@ main {
 
 .hero-image {
     margin-top: 2rem;
-    width: 80%;
+    width: 90%;
     max-width: 600px;
-    mask-image: radial-gradient(circle, black 50%, transparent 80%);
-    animation: fadeIn 2s ease-in-out forwards;
+    mask-image: radial-gradient(circle, black 50%, transparent 90%);
 }
 
 @keyframes fadeIn {
