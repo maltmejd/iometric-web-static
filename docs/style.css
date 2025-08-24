@@ -66,6 +66,25 @@ main {
     color: #f4f4f4;
 }
 
+.hero-image {
+    margin-top: 2rem;
+    width: 80%;
+    max-width: 600px;
+    mask-image: radial-gradient(circle, black 50%, transparent 80%);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        filter: blur(20px);
+        opacity: 0;
+    }
+    to {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
 .content {
     background-color: #23272A;
     padding: 2rem;
