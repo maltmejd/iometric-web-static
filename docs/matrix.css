@@ -1,0 +1,14 @@
+/* CSS to make the canvas a fixed background */
+body {
+    margin: 0;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind everything else */
+}

@@ -77,25 +77,7 @@ main {
     color: #DAA520; /* GoldenRod */
 }
 
-/* Animated Wireframe Background for Home Page */
-#home-page {
-    background-image:
-        linear-gradient(45deg, rgba(0,0,128,0.1) 25%, transparent 25%),
-        linear-gradient(-45deg, rgba(0,0,128,0.1) 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, rgba(0,0,128,0.1) 75%),
-        linear-gradient(-45deg, transparent 75%, rgba(0,0,128,0.1) 75%);
-    background-size: 30px 30px;
-    animation: move-background 20s linear infinite alternate;
-}
-
-@keyframes move-background {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 60px 60px;
-    }
-}
+/* Animated Wireframe Background for Home Page was here */
 
 
 /* Specialties Grid for About Page */
