@@ -26,7 +26,7 @@ function draw() {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = 'rgba(42, 82, 190, 0.45)'; // Cerulean text with 25% opacity
+    ctx.fillStyle = 'rgba(42, 82, 190, 0.80)'; // Cerulean text with 25% opacity
     ctx.font = `${fontSize}px monospace`;
 
     for (let i = 0; i < rainDrops.length; i++) {
