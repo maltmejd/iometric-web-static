@@ -1,0 +1,116 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2C2F33; /* Slick Grey */
+    color: #f4f4f4;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #23272A;
+    padding: 1rem 0;
+    border-bottom: 1px solid #000080; /* Navy Blue */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #B0C4DE; /* Light Steel Blue */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 10px #C00030, 0 0 20px #C00030, 0 0 30px #C00030; /* Brighter Burgundy Glow */
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #f4f4f4;
+}
+
+.content {
+    background-color: #23272A;
+    padding: 2rem;
+    border: 1px solid #000080; /* Navy Blue */
+    border-radius: 5px;
+}
+
+.content a {
+    color: #DAA520; /* GoldenRod */
+}
+
+/* Animated Wireframe Background for Home Page */
+#home-page {
+    background-image:
+        linear-gradient(45deg, rgba(0,0,128,0.1) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(0,0,128,0.1) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(0,0,128,0.1) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(0,0,128,0.1) 75%);
+    background-size: 30px 30px;
+    animation: move-background 20s linear infinite alternate;
+}
+
+@keyframes move-background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 60px 60px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
