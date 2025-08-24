@@ -94,10 +94,11 @@ main {
 }
 
 .content {
-    background-color: #23272A;
+    background-color: rgba(35, 39, 42, 0.25);
     padding: 2rem;
     border: 1px solid #000080; /* Navy Blue */
     border-radius: 5px;
+    text-align: center;
 }
 
 .content a {
