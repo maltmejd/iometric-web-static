@@ -135,19 +135,53 @@ main {
 }
 
 /* Responsive Design */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
-    nav {
+    nav ul {
+        display: none;
         flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        background-color: #23272A;
     }
 
-    nav ul {
-        flex-direction: column;
-        margin-top: 1rem;
+    nav ul.active {
+        display: flex;
     }
 
     nav ul li {
-        margin: 10px 0;
-        text-align: center;
+        margin: 15px 0;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu.active .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger-menu.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 
     .specialties-grid {
