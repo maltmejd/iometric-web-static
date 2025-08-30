@@ -1,7 +1,6 @@
 /* CSS to make the canvas a fixed background */
 body {
     margin: 0;
-    overflow: hidden; /* Hide scrollbars */
 }
 
 #matrix-canvas {
